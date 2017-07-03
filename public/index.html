@@ -3,20 +3,6 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Weather or Not</title>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Weather or Not</h1>
-      <img src="http://placehold.it/200X100">
-      <nav>
-        <ul class="menu">
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/trouble">TroubleShooting</a></li>
-        </ul>
-      </nav>
-    </header>
     <script id="weather_template" type="text/x-handlebars-template">
       <ul class="weather-info">
         <li>Temperature {{temp}}</li>
@@ -30,6 +16,20 @@
         <li>{{snow}}</li>
       </ul>
     </script>
+  </head>
+  <body>
+    <header>
+      <h1>Weather or Not</h1>
+      <img src="http://placehold.it/200X100">
+      <nav>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/trouble">TroubleShooting</a></li>
+        </ul>
+      </nav>
+    </header>
+
     <main>
       <section class="tab-content" class="entries">
         <h2>New Route</h2>
@@ -50,7 +50,7 @@
         </div>
       </section>
 
-      <section class="tab-content" class="about">
+      <section class="tab-content about">
         <h2>About Us</h2>
         <h3>Matt Staples</h3>
         <img src="http://placehold.it/200X200">
@@ -74,5 +74,11 @@
 
       </footer>
     </main>
+
+    <script src="vendor/scripts/jquery.js"></script>
+    <script src="vendor/scripts/handlebars.js"></script>
+    <script src="vendor/scripts/page.js"></script>
+    <script src="scripts/views/nav.js"></script>
+    <script src="scripts/controllers/routes.js"></script>
   </body>
 </html>
