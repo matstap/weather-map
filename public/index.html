@@ -16,7 +16,18 @@
         </ul>
       </nav>
     </header>
-
+    <script id="weather_template" type="text/x-handlebars-template">
+      <ul class="weather-info">
+        <li>Temperature {{temp}}</li>
+        <li>Low{{min-temp}}</li>
+        <li>High{{max-temp}}</li>
+        <li>{{description}}</li>
+        <li>Humidity{{humidity}}</li>
+        <li>Cloudiness {{clouds}}</li>
+        <li>Wind {{wind}}</li>
+        <li>{{snow}}</li>
+      </ul>
+    </script>
     <main>
       <section class="entries">
         <h2>New Route</h2>
