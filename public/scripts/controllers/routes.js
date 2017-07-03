@@ -1,6 +1,6 @@
 'use strict';
 
-page('/',);
-page('/about',);
-page('/trouble',);
+page('/');
+page('/about', app.pageView.about);
+// page('/trouble');
 page();
