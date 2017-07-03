@@ -52,7 +52,7 @@ function addMarkers(points) {
   }
   markers = [];
   // points.forEach(function(p) {
-  for (var i = 0; i < points.length; i+=1) {
+  for (var i = 0; i < points.length; i+=25) {
     var markerLoc = new google.maps.LatLng(points[i].lat(), points[i].lng());
     var marker = new google.maps.Marker({
       position: markerLoc,
