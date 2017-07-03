@@ -22,11 +22,14 @@ var weatherObj;
 //   return weatherObj[0];
 // }
 
+function getWeather(lat, lon) {
+  $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + api_key + '&units=imperial', function(data) {
+    weatherObj = new Weather(data);
+  });
+  return weatherObj;
+}
 
-$.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + api_key + '&units=imperial', function(data) {
-  //console.log(data);
-  weatherObj = new Weather(data);
-});
+
 
 
 // weatherObj = $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + api_key + '&units=imperial', function(data) {
@@ -36,7 +39,7 @@ $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' 
 
 //var weatherObj = JSON.parse(text);
 
-console.log(weatherObj);
+//console.log(weatherObj);
 
 //
 // console.log(weatherObj.name);
