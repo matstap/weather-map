@@ -16,9 +16,21 @@
         </ul>
       </nav>
     </header>
-
+    <script id="weather_template" type="text/x-handlebars-template">
+      <ul class="weather-info">
+        <li>Temperature {{temp}}</li>
+        <li>Low{{min-temp}}</li>
+        <li>High{{max-temp}}</li>
+        <li>{{description}}</li>
+        <li>Humidity{{humidity}}</li>
+        <li>Cloudiness {{clouds}}</li>
+        <li>Wind {{wind}}</li>
+        <li>rbain {{rain}}</li>
+        <li>{{snow}}</li>
+      </ul>
+    </script>
     <main>
-      <section class="entries">
+      <section class="tab-content" class="entries">
         <h2>New Route</h2>
         <form action="#" id="new-route">
           <label>
@@ -31,10 +43,29 @@
         </form>
       </section>
 
-      <section>
+      <section class="tab-content">
         <div id="map">
           This is where our map goes
         </div>
+      </section>
+
+      <section class="tab-content" class="about">
+        <h2>About Us</h2>
+        <h3>Matt Staples</h3>
+        <img src="http://placehold.it/200X200">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <h3>Anthony Konschuh</h3>
+        <img src="http://placehold.it/200X200">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <h3>Tim Turner</h3>
+        <img src="http://placehold.it/200X200">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <h3>Andy Martin</h3>
+        <img src="http://placehold.it/200X200">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </section>
       <button type="button" name="new-map">Start a New Map</button>
       <footer>
