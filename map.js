@@ -30,6 +30,7 @@ function initMap() {
   $('#end').on('change', onChangeHandler);
 }
 
+var locations = [];
 function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   directionsService.route({
     origin: $('#start').val(),
@@ -40,9 +41,9 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
       directionsDisplay.setDirections(response);
       // console.log(response.routes[0].overview_path);
     } else {
-      window.alert('Directions request failed due to ' + status);
+      // window.alert('Directions request failed due to ' + status);
     }
-    addMarkers(directionsDisplay.getDirections().routes[0].overview_path);
+    locations = directionsDisplay.getDirections().routes[0].overview_path.filter((_, ind) => ind % 25 === 0);
   });
 }
 
@@ -51,14 +52,18 @@ function addMarkers(points) {
     markers[i].setMap(null);
   }
   markers = [];
+  console.log('points', points.length);
+  console.log(points);
   // points.forEach(function(p) {
-  for (var i = 0; i < points.length; i+=25) {
-    var markerLoc = new google.maps.LatLng(points[i].lat(), points[i].lng());
+  for (var i = 0; i < points.length; i++) {
+    var markerLoc = new google.maps.LatLng(points[i].lat, points[i].lng);
     var marker = new google.maps.Marker({
       position: markerLoc,
-      map: map
-      // icon: weatherObj.icon
+      map: map,
+      icon: `http://openweathermap.org/img/w/${points[i].icon}.png`
     });
+    markers.push(marker);
+
     // add pop up for weather
     // var contentString = `${weatherObj.name}, ...`
     // var infowindow = new google.maps.InfoWindow({
@@ -67,9 +72,6 @@ function addMarkers(points) {
     // marker.addListener('click', function() {
     //       infowindow.open(map, marker);
     //     });
-
-
-    markers.push(marker);
   }
-  console.log(markers[5].position.lat(), markers[5].position.lng());
+  // console.log(markers[5].position.lat(), markers[5].position.lng());
 }
