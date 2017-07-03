@@ -1,0 +1,8 @@
+/* this is where you put your @import 'scss/base/base.scss' remember that you have an underscore on teh file name, but not in this file path. */
+body {
+  background: orange; }
+
+main {
+  background: blue; }
+
+/*# sourceMappingURL=style.css.map */
