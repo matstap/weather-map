@@ -1,4 +1,5 @@
 var map;
+var markers = [];
 
 function initMap() {
   var directionsService = new google.maps.DirectionsService;
@@ -46,7 +47,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
 }
 
 function addMarkers(points) {
-  var markers = [];
+  for (var i = 0; i < markers.length; i++) {
+    markers[i].setMap(null);
+  }
+  markers = [];
   // points.forEach(function(p) {
   for (var i = 0; i < points.length; i+=1) {
     var markerLoc = new google.maps.LatLng(points[i].lat(), points[i].lng());
