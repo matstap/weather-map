@@ -1,8 +1,16 @@
 /* this is where you put your @import 'scss/base/base.scss' remember that you have an underscore on teh file name, but not in this file path. */
-body {
-  background: orange; }
-
-main {
-  background: blue; }
+header {
+  width: 100%;
+  background: #444;
+  height: 20vw;
+  color: #777; }
+  header img {
+    float: left;
+    width: 20vw;
+    margin-top: 5vw;
+    margin-right: 5vw; }
+  header h1 {
+    float: left;
+    width: 50vw; }
 
 /*# sourceMappingURL=style.css.map */
