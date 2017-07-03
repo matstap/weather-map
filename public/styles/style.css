@@ -1,4 +1,20 @@
 /* this is where you put your @import 'scss/base/base.scss' remember that you have an underscore on teh file name, but not in this file path. */
+.entries {
+  margin: 3vw; }
+  .entries h2 {
+    font-size: 7vw;
+    margin-bottom: 1vw; }
+  .entries input {
+    width: 40vw;
+    padding: 2vw;
+    outline: none;
+    background: #444;
+    border: none; }
+  .entries input::-webkit-input-placeholder {
+    color: white; }
+  .entries input:focus {
+    color: white; }
+
 header {
   position: relative;
   max-width: 100%;

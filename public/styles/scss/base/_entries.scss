@@ -1,0 +1,30 @@
+$font-stack: Helvetica, sans-serif;
+$primary-color: #444;
+$secondary-color: #777;
+$tertiary-color: white;
+$fourth-color: black;
+
+.entries{
+  margin: 3vw;
+
+  h2{
+    font-size: 7vw;
+    margin-bottom: 1vw;
+  }
+
+  input{
+    width: 40vw;
+    padding: 2vw;
+    outline: none;
+    background: $primary-color;
+    border: none;
+  }
+
+  input::-webkit-input-placeholder {
+    color: $tertiary-color;
+  }
+
+  input:focus{
+    color: $tertiary-color;
+  }
+}
