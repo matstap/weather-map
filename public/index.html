@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weather or Not</title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather or Not</h1>
+      <img src="http://placehold.it/100X200">
+      <nav>
+        <ul class="menu">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/trouble">TroubleShooting</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="entries">
+        <h2>New Route</h2>
+        <form action="#" id="new-route">
+          <label>
+            <input type="text" id="starting-point" placeholder="Starting Point" required>
+          </label>
+          <!-- add a new stop!  -->
+          <label>
+            <input type="text" id="ending-point" placeholder="Ending Point" required>
+          </label>
+        </form>
+      </section>
+
+      <section>
+        <div id="map">
+
+        </div>
+      </section>
+      <footer>
+        <p>&copy;TAMA Inc</p>
+        
+      </footer>
+    </main>
+  </body>
+</html>
