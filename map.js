@@ -57,9 +57,18 @@ function addMarkers(points) {
     var marker = new google.maps.Marker({
       position: markerLoc,
       map: map
-      // icon based on weather
+      // icon: weatherObj.icon
     });
     // add pop up for weather
+    // var contentString = `${weatherObj.name}, ...`
+    // var infowindow = new google.maps.InfoWindow({
+    //      content: contentString
+    //    });
+    // marker.addListener('click', function() {
+    //       infowindow.open(map, marker);
+    //     });
+
+
     markers.push(marker);
   }
   console.log(markers[5].position.lat(), markers[5].position.lng());
