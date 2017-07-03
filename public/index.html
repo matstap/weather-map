@@ -24,7 +24,7 @@
     <header>
       <img src="http://placehold.it/200X100">
       <h1>Weather or Not</h1>
-      <nav>
+      <nav class="main-nav">
         <div class="icon-menu"></div>
         <ul class="menu">
           <li><a href="/">Home</a></li>
@@ -48,10 +48,8 @@
         </form>
       </section>
 
-      <section class="tab-content">
-        <div id="map">
-          This is where our map goes
-        </div>
+      <section class="tab-content map">
+        <div id="map"></div>
       </section>
 
       <section class="tab-content about">
@@ -83,6 +81,7 @@
     <script src="vendor/scripts/handlebars.js"></script>
     <script src="vendor/scripts/page.js"></script>
     <script src="scripts/views/nav.js"></script>
+    <script src="scripts/views/nav-display.js"></script>
     <script src="scripts/controllers/routes.js"></script>
   </body>
 </html>

@@ -1,0 +1,37 @@
+Script started on Mon Jul  3 15:33:37 2017
+[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public]1;..er-map/public[0m[27m[24m[J[01;32m➜  [36mpublic[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=sscripts[1m/[0m[0m [?1l>
+]2;scripts]1;scripts[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts]1;..ublic/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;ls[1m[36mcontrollers[39;49m[0m [1m[36mviews[39;49m[0m
+[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts]1;..ublic/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=vviews[?1l>
+]2;views]1;views[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts/views]1;..scripts/views[0m[27m[24m[J[01;32m➜  [36mviews[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsnav.js
+[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts/views]1;..scripts/views[0m[27m[24m[J[01;32m➜  [36mviews[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=ttouch nav-display.js[?1l>
+]2;touch nav-display.js]1;touch[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts/views]1;..scripts/views[0m[27m[24m[J[01;32m➜  [36mviews[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=aatom nav-display.js[1m [0m[0m [?1l>
+]2;atom nav-display.js]1;atom[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts/views]1;..scripts/views[0m[27m[24m[J[01;32m➜  [36mviews[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=ggit status[?1l>
+]2;git status]1;gitOn branch features/styling/mapStyling
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   ../../index.html[m
+	[31mmodified:   ../../styles/.sass-cache/7a19b2d9690eacd11e25b9cafe7813739a5b5331/_header.scssc[m
+	[31mmodified:   ../../styles/.sass-cache/7a19b2d9690eacd11e25b9cafe7813739a5b5331/_map.scssc[m
+	[31mmodified:   ../../styles/scss/base/_header.scss[m
+	[31mmodified:   ../../styles/scss/base/_map.scss[m
+	[31mmodified:   ../../styles/style.css[m
+	[31mmodified:   ../../styles/style.css.map[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mnav-display.js[m
+	[31m../../typescript[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts/views]1;..scripts/views[0m[27m[24m[J[01;32m➜  [36mviews[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=ggit add .[?1l>
+]2;git add .]1;git[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts/views]1;..scripts/views[0m[27m[24m[J[01;32m➜  [36mviews[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=ggit commi      g  ccd ..[?1l>
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public/scripts]1;..ublic/scripts[0m[27m[24m[J[01;32m➜  [36mscripts[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=ccd ..[?1l>
+]2;cd ..]1;cd[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public]1;..er-map/public[0m[27m[24m[J[01;32m➜  [36mpublic[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=lls[?1l>
+]2;ls -G]1;lsindex.html   [1m[36mstyles[39;49m[0m       [1m[36mvendor[39;49m[0m       weather.js
+[1m[36mscripts[39;49m[0m      typescript   weather.html
+[1m[7m%[27m[1m[0m                                                                                ]2;Andymartin@Andrews-MacBook-Pro: ~/codefellows/301/weather-map/public]1;..er-map/public[0m[27m[24m[J[01;32m➜  [36mpublic[00m [01;34mgit:([31mfeatures/styling/mapStyling[34m) [33m✗[00m [K[?1h=

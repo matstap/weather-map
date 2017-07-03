@@ -26,11 +26,12 @@ header {
     float: left;
     width: 20vw;
     margin-top: 5vw;
-    margin-right: 5vw; }
+    margin-right: 5vw;
+    margin-left: 3vw; }
   header h1 {
     float: left;
     font-size: 8vw;
-    margin-top: 5vw;
+    margin-top: 6vw;
     color: white; }
   header nav {
     float: right;
@@ -40,17 +41,40 @@ header {
   header div {
     font-size: 10vw; }
   header ul {
-    display: none;
     position: absolute;
     left: 0;
     height: 100vh;
     width: 100vw;
     background: #444;
     color: #777; }
+  header .menu {
+    display: none;
+    width: 100%; }
+  header .display-nav {
+    position: fixed;
+    top: 20vw;
+    z-index: 99;
+    width: 100%;
+    background: #444;
+    height: 100vh;
+    /*margin-top: 20vw;*/ }
+  header .display-nav li a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 10vw;
+    border: 1px solid white;
+    padding: 5vw 0; }
   header li {
     list-style: none; }
   header li a {
     color: white;
     text-decoration: none; }
+
+.map {
+  background: grey;
+  height: 75vw;
+  width: 100%; }
 
 /*# sourceMappingURL=style.css.map */
