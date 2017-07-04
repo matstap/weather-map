@@ -10,23 +10,24 @@ function Weather(obj) {
   this.temp = obj.main.temp;
   this.humidity = obj.main.humidity;
   this.icon = obj.weather[0].icon;
+  this.lat = obj.coord.lat;
+  this.lng = obj.coord.lon;
 }
 
-var weatherObj;
-//'http://api.openweathermap.org/data/2.5/weather?lat=36.53&lon=-116.93&appid=d03ed117124fd765f370b5417fedbb03&units=imperial'
+var weatherObj = [];
 
-// var returnWeather = function(lat, lon) {
-//
-//
-//
-//   return weatherObj[0];
-// }
 
-function getWeather(lat, lon) {
-  $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&appid=' + api_key + '&units=imperial', function(data) {
-    weatherObj = new Weather(data);
+function getWeather(arr, callback) {
+  weatherObj = [];
+  arr.map((item, ind) => {
+    var temp;
+    $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
+      temp = new Weather(data);
+      weatherObj.push(temp);
+      console.log('weather weatherObj');
+      callback(weatherObj);
+    });
   });
-  return weatherObj;
 }
 
 
