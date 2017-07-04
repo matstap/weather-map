@@ -45,6 +45,7 @@
           <label>
             <input type="text" id="end" placeholder="Ending Point" required>
           </label>
+          <button type="button" id="get_weather" name="new-route">Get Weather</button>
         </form>
       </section>
 
@@ -73,10 +74,15 @@
     </main>
 
     <script src="vendor/scripts/jquery.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAtVa2Wk-9kOWwBx91HanM-q4ynCxVJqCY&callback=initMap">
     <script src="vendor/scripts/handlebars.js"></script>
     <script src="vendor/scripts/page.js"></script>
     <script src="scripts/views/nav.js"></script>
     <script src="scripts/views/nav-display.js"></script>
     <script src="scripts/controllers/routes.js"></script>
+    <script src="scripts/controllers/weather.js"></script>
+    <script src="scripts/controllers/map.js"></script>
+
   </body>
 </html>

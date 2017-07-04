@@ -90,8 +90,7 @@ header {
     color: white;
     text-decoration: none; }
 
-.map {
-  background: grey;
+#map {
   height: 75vw;
   width: 100%; }
 
