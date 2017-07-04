@@ -1,4 +1,8 @@
 /* this is where you put your @import 'scss/base/base.scss' remember that you have an underscore on teh file name, but not in this file path. */
+h2 {
+  font-size: 7vw;
+  margin-bottom: 1vw; }
+
 .entries {
   margin: 3vw; }
   .entries h2 {
@@ -14,6 +18,20 @@
     color: white; }
   .entries input:focus {
     color: white; }
+
+.about {
+  margin: 5vw; }
+  .about h2 {
+    font-size: 9vw;
+    margin-bottom: 5vw; }
+  .about img {
+    float: left;
+    height: 30vw;
+    width: 30vw;
+    margin-right: 2vw; }
+  .about p {
+    font-size: 5vw;
+    margin-bottom: 5vw; }
 
 header {
   position: relative;
