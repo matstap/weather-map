@@ -18,10 +18,9 @@ var weatherObj = [];
 
 
 function getWeather(arr, callback) {
-  console.log('weather line 21');
-arr.map((item, ind) => {
-  var temp;
-  console.log('weather line 23');
+  weatherObj = [];
+  arr.map((item, ind) => {
+    var temp;
     $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
       temp = new Weather(data);
       weatherObj.push(temp);
@@ -29,7 +28,6 @@ arr.map((item, ind) => {
       callback(weatherObj);
     });
   });
-
 }
 
 
