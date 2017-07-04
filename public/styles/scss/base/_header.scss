@@ -18,12 +18,13 @@ header{
     width: 20vw;
     margin-top: 5vw;
     margin-right: 5vw;
+    margin-left: 3vw;
   }
 
   h1{
     float: left;
     font-size: 8vw;
-    margin-top: 5vw;
+    margin-top: 6vw;
     color: $tertiary-color;
   }
 
@@ -39,7 +40,6 @@ header{
   }
 
   ul {
-    display: none;
     position: absolute;
     left: 0;
     height: 100vh;
@@ -47,6 +47,32 @@ header{
     background: $primary-color;
     color: $secondary-color;
 
+  }
+
+  .menu {
+  display: none;
+  width: 100%;
+  }
+
+  .display-nav{
+    position: fixed;
+    top: 20vw;
+    z-index: 99;
+    width: 100%;
+    background: $primary-color;
+    height: 100vh;
+    /*margin-top: 20vw;*/
+  }
+
+
+  .display-nav li a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: $tertiary-color;
+    font-size: 10vw;
+    border: 1px solid white;
+    padding: 5vw 0;
   }
 
   li{

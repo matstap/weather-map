@@ -24,7 +24,7 @@
     <header>
       <img src="http://placehold.it/200X100">
       <h1>Weather or Not</h1>
-      <nav>
+      <nav class="main-nav">
         <div class="icon-menu"></div>
         <ul class="menu">
           <li><a href="/">Home</a></li>
@@ -48,31 +48,24 @@
         </form>
       </section>
 
-      <section class="tab-content">
-        <div id="map">
-          This is where our map goes
-        </div>
+      <section class="tab-content map">
+        <div id="map"></div>
       </section>
 
       <section class="tab-content about">
         <h2>About Us</h2>
-        <h3>Matt Staples</h3>
         <img src="http://placehold.it/200X200">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <h3>Anthony Konschuh</h3>
         <img src="http://placehold.it/200X200">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <h3>Tim Turner</h3>
         <img src="http://placehold.it/200X200">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-        <h3>Andy Martin</h3>
         <img src="http://placehold.it/200X200">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
       </section>
-      <button type="button" name="new-map">Start a New Map</button>
       <footer>
         <p>&copy;TAMA Inc</p>
 
@@ -83,6 +76,7 @@
     <script src="vendor/scripts/handlebars.js"></script>
     <script src="vendor/scripts/page.js"></script>
     <script src="scripts/views/nav.js"></script>
+    <script src="scripts/views/nav-display.js"></script>
     <script src="scripts/controllers/routes.js"></script>
   </body>
 </html>
