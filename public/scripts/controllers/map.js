@@ -53,23 +53,22 @@ function addMarkers(points) {
   }
   markers = [];
   for (var i = 0; i < points.length; i++) {
-    var contentString = `<h3>${points[i].name}</h3>`
-    var infowindow = new google.maps.InfoWindow({
-      content: contentString
-    });
     var markerLoc = new google.maps.LatLng(points[i].lat, points[i].lng);
     var marker = new google.maps.Marker({
       position: markerLoc,
       map: map,
       icon: `http://openweathermap.org/img/w/${points[i].icon}.png`,
-      title: points[i].name
+      title: `| ${points[i].name} | ${points[i].description} |`
     });
     markers.push(marker);
 
-
-    marker.addListener('click', function() {
-      infowindow.open(map, marker);
-    });
-
+  //   var contentString = `<h3>${points[i].name}</h3>`
+  //   var infowindow = new google.maps.InfoWindow({
+  //     content: contentString
+  //   });
+  //   console.log(points[i].name);
+  //   marker.addListener('click', function() {
+  //     infowindow.open(map, marker);
+  //   });
   }
 }
