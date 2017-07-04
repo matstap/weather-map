@@ -1,8 +1,11 @@
+$font-stack: Helvetica, sans-serif;
+
 .about {
   margin: 5vw;
   h2{
     font-size: 9vw;
     margin-bottom: 5vw;
+    font-family: $font-stack;
   }
 
   img {
@@ -12,9 +15,10 @@
     margin-right: 2vw;
   }
 
-  p{
+  p {
     font-size: 5vw;
     margin-bottom: 5vw;
+    font-family: $font-stack;
   }
 
 
