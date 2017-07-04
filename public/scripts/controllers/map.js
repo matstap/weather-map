@@ -26,8 +26,9 @@ function initMap() {
   var onChangeHandler = function() {
     calculateAndDisplayRoute(directionsService, directionsDisplay);
   };
-  $('#start').on('change', onChangeHandler);
-  $('#end').on('change', onChangeHandler);
+  // $('#start').on('change', onChangeHandler);
+  // $('#end').on('change', onChangeHandler);
+  $('#get_weather').on('click', onChangeHandler);
 }
 
 var locations = [];

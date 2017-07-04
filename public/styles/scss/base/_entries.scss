@@ -29,4 +29,15 @@ $fourth-color: black;
   input:focus{
     color: $tertiary-color;
   }
+
+  #get_weather {
+    font-size: 2vw;
+    border: none;
+    padding: 1vw 2vh;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
+  }
 }
