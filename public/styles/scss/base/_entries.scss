@@ -8,13 +8,15 @@ $fourth-color: black;
   margin: 3vw;
 
   h2{
-    font-size: 7vw;
+    font-size: 5vw;
     margin-bottom: 1vw;
+    font-family: $font-stack;
   }
 
   input{
+    font-size: 2vw;
     width: 40vw;
-    padding: 2vw;
+    padding: 1vw;
     outline: none;
     background: $primary-color;
     border: none;
@@ -26,5 +28,16 @@ $fourth-color: black;
 
   input:focus{
     color: $tertiary-color;
+  }
+
+  #get_weather {
+    font-size: 2vw;
+    border: none;
+    padding: 1vw 2vh;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer;
   }
 }

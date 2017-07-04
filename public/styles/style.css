@@ -6,11 +6,13 @@ h2 {
 .entries {
   margin: 3vw; }
   .entries h2 {
-    font-size: 7vw;
-    margin-bottom: 1vw; }
+    font-size: 5vw;
+    margin-bottom: 1vw;
+    font-family: Helvetica, sans-serif; }
   .entries input {
+    font-size: 2vw;
     width: 40vw;
-    padding: 2vw;
+    padding: 1vw;
     outline: none;
     background: #444;
     border: none; }
@@ -18,12 +20,22 @@ h2 {
     color: white; }
   .entries input:focus {
     color: white; }
+  .entries #get_weather {
+    font-size: 2vw;
+    border: none;
+    padding: 1vw 2vh;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    cursor: pointer; }
 
 .about {
   margin: 5vw; }
   .about h2 {
     font-size: 9vw;
-    margin-bottom: 5vw; }
+    margin-bottom: 5vw;
+    font-family: Helvetica, sans-serif; }
   .about img {
     float: left;
     height: 30vw;
@@ -31,7 +43,8 @@ h2 {
     margin-right: 2vw; }
   .about p {
     font-size: 5vw;
-    margin-bottom: 5vw; }
+    margin-bottom: 5vw;
+    font-family: Helvetica, sans-serif; }
 
 header {
   position: relative;
@@ -43,12 +56,12 @@ header {
   header img {
     float: left;
     width: 20vw;
-    margin-top: 5vw;
-    margin-right: 5vw;
+    margin-right: 3vw;
     margin-left: 3vw; }
   header h1 {
     float: left;
     font-size: 8vw;
+    font-family: Helvetica, sans-serif;
     margin-top: 6vw;
     color: white; }
   header nav {
