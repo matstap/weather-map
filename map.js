@@ -39,11 +39,14 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   }, function(response, status) {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
+      locations = directionsDisplay.getDirections().routes[0].overview_path.filter((_, ind) => ind % 25 === 0);
+      console.log(locations.length);
+      getWeather(locations, addMarkers);
       // console.log(response.routes[0].overview_path);
     } else {
       // window.alert('Directions request failed due to ' + status);
     }
-    locations = directionsDisplay.getDirections().routes[0].overview_path.filter((_, ind) => ind % 25 === 0);
+    // locations = directionsDisplay.getDirections().routes[0].overview_path.filter((_, ind) => ind % 25 === 0);
   });
 }
 
