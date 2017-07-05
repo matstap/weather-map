@@ -15,6 +15,11 @@ var app = app || {};
     $('.entries').show();
     $('.map').show();
   }
-  
+
+  pageView.contact = () => {
+    $('.tab-content').hide();
+    $('.contact-us').show();
+  }
+
   module.pageView = pageView;
 }(app));
