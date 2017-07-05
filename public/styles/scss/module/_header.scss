@@ -6,7 +6,7 @@ $fourth-color: black;
 
 @media only screen and (min-width: 640px) {
   header {
-    height: 180px;
+    height: 130px;
     position: static;
 
     .max-width{
@@ -23,7 +23,8 @@ $fourth-color: black;
     }
 
     h1 {
-      font-size: 55px;
+      width: 140px;
+      font-size: 30px;
       margin-left: 0px;
       margin-top: 50px
     }
@@ -35,7 +36,6 @@ $fourth-color: black;
     .main-nav {
       display: block;
       float: right;
-      width: 100%;
       height: 50px;
       margin-top: 0px;
       margin-right: 0px;
