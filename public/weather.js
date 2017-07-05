@@ -18,16 +18,15 @@ var weatherObj = [];
 
 
 function getWeather(arr, callback) {
-  weatherObj = [];
-  arr.map((item, ind) => {
-    var temp;
+arr.map((item, ind) => {
+  var temp;
     $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
       temp = new Weather(data);
       weatherObj.push(temp);
-      console.log('weather weatherObj');
       callback(weatherObj);
     });
   });
+
 }
 
 
