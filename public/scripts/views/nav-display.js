@@ -1,4 +1,5 @@
 $('.icon-menu').click(function(){
+  $('body').toggleClass('hidden');
   $('.main-nav ul').toggleClass('menu');
   $('.main-nav ul').toggleClass('display-nav');
 });
