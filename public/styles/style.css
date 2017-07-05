@@ -1,4 +1,7 @@
 /* this is where you put your @import 'scss/base/base.scss' remember that you have an underscore on teh file name, but not in this file path. */
+.clear-fix {
+  clear: both; }
+
 h2 {
   font-size: 7vw;
   margin-bottom: 1vw; }
@@ -107,17 +110,16 @@ header {
   height: 75vw;
   width: 100%; }
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 640px) {
   header {
     height: 130px; }
     header img {
-      display: none;
       width: 130px;
       margin-top: 20px;
       margin-right: 20px;
       margin-left: 20px; }
     header h1 {
-      font-size: 57px;
+      font-size: 55px;
       margin-left: 30px;
       margin-top: 50px; }
     header .main-nav {
@@ -129,7 +131,7 @@ header {
     header .icon-menu {
       display: none; }
     header .menu {
-      display: inline-block;
+      display: block;
       height: 40px;
       width: 400px;
       text-align: right;
