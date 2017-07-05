@@ -3,7 +3,7 @@ $font-stack: Helvetica, sans-serif;
 .about {
   margin: 5vw;
   h2{
-    font-size: 9vw;
+    font-size: 5vw;
     margin-bottom: 5vw;
     font-family: $font-stack;
   }
@@ -15,11 +15,19 @@ $font-stack: Helvetica, sans-serif;
     margin-right: 2vw;
   }
 
-  p {
-    font-size: 5vw;
-    margin-bottom: 5vw;
+  h3{
+    font-size: 4vw;
+    margin-bottom: 3vw;
     font-family: $font-stack;
   }
 
+  p {
+    font-size: 3vw;
+    margin-bottom: 3vw;
+    font-family: $font-stack;
+  }
 
+  // p:after {
+  // clear: both;
+  // }
 }

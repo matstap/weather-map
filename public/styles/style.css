@@ -57,7 +57,7 @@ footer p {
 .about {
   margin: 5vw; }
   .about h2 {
-    font-size: 9vw;
+    font-size: 5vw;
     margin-bottom: 5vw;
     font-family: Helvetica, sans-serif; }
   .about img {
@@ -65,9 +65,13 @@ footer p {
     height: 30vw;
     width: 30vw;
     margin-right: 2vw; }
+  .about h3 {
+    font-size: 4vw;
+    margin-bottom: 3vw;
+    font-family: Helvetica, sans-serif; }
   .about p {
-    font-size: 5vw;
-    margin-bottom: 5vw;
+    font-size: 3vw;
+    margin-bottom: 3vw;
     font-family: Helvetica, sans-serif; }
 
 header {
