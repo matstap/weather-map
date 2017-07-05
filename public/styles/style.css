@@ -73,6 +73,10 @@ header {
     font-family: Helvetica, sans-serif;
     margin-top: 5vw;
     color: white; }
+  header .icon-menu {
+    position: absolute;
+    top: 25%;
+    right: 2%; }
   header .main-nav {
     float: right;
     margin-top: 5vw;
@@ -111,7 +115,6 @@ header {
   header li a {
     color: white;
     text-decoration: none; }
-
 
 .hidden {
   height: 100vw;
