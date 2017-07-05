@@ -153,8 +153,7 @@ header {
     header li {
       display: inline-block;
       font-size: 25px;
-      margin-right: 0px;
-      outline: 1px dotted orange; } }
+      margin-right: 0px; } }
 @media only screen and (min-width: 640px) {
   main {
     max-width: 960px;
