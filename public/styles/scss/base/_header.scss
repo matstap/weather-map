@@ -3,6 +3,7 @@ $primary-color: #444;
 $secondary-color: #777;
 $tertiary-color: white;
 $fourth-color: black;
+$fifth-color: #1E87E8;
 
 header{
   position: relative;
@@ -74,12 +75,17 @@ header{
 
   .display-nav li a {
     float: left;
-    width: 100%;
+    width: 99.8%;
     text-align: center;
     color: $tertiary-color;
     font-size: 10vw;
-    border: 1px solid white;
+    border: 1px solid $tertiary-color;
     padding: 5vw 0;
+    font-family: $font-stack;
+  }
+
+  .display-nav li a:hover, .display-nav li a:active {
+    color: $fifth-color;
   }
 
   li{

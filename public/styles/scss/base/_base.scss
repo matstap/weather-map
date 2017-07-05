@@ -1,4 +1,10 @@
+$font-stack: Helvetica, sans-serif;
+
 h2{
   font-size: 7vw;
   margin-bottom: 1vw;
+}
+
+footer p {
+  font-family: $font-stack;
 }

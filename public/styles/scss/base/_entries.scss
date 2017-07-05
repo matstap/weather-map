@@ -3,30 +3,41 @@ $primary-color: #444;
 $secondary-color: #777;
 $tertiary-color: white;
 $fourth-color: black;
+$fifth-color: #1E87E8;
 
-.entries{
+.entries {
   margin: 3vw;
 
-  h2{
+  h2 {
     font-size: 5vw;
     margin-bottom: 1vw;
     font-family: $font-stack;
   }
 
-  input{
+  input {
     font-size: 2vw;
     width: 40vw;
     padding: 1vw;
     outline: none;
-    background: $primary-color;
-    border: none;
+    background: $secondary-color;
+    border: 1px solid $tertiary-color;
   }
 
   input::-webkit-input-placeholder {
     color: $tertiary-color;
   }
 
-  input:focus{
+  input:focus::-webkit-input-placeholder {
+    color: #fff100;
+  }
+
+  input:focus {
+    color: $tertiary-color;
+    box-shadow: 0 0 5px $fifth-color;
+    border: 1px solid $fifth-color;
+  }
+
+  input:not(:focus) {
     color: $tertiary-color;
   }
 
@@ -34,7 +45,7 @@ $fourth-color: black;
     font-size: 2vw;
     border: none;
     padding: 1vw 2vh;
-    background: #000;
+    background: $primary-color;
     color: #fff;
     border-radius: 3px;
     margin-top: 20px;

@@ -3,6 +3,9 @@ h2 {
   font-size: 7vw;
   margin-bottom: 1vw; }
 
+footer p {
+  font-family: Helvetica, sans-serif; }
+
 .entries {
   margin: 3vw; }
   .entries h2 {
@@ -14,17 +17,23 @@ h2 {
     width: 40vw;
     padding: 1vw;
     outline: none;
-    background: #444;
-    border: none; }
+    background: #777;
+    border: 1px solid white; }
   .entries input::-webkit-input-placeholder {
     color: white; }
+  .entries input:focus::-webkit-input-placeholder {
+    color: #fff100; }
   .entries input:focus {
+    color: white;
+    box-shadow: 0 0 5px #1E87E8;
+    border: 1px solid #1E87E8; }
+  .entries input:not(:focus) {
     color: white; }
   .entries #get_weather {
     font-size: 2vw;
     border: none;
     padding: 1vw 2vh;
-    background: #000;
+    background: #444;
     color: #fff;
     border-radius: 3px;
     margin-top: 20px;
@@ -96,12 +105,15 @@ header {
     /*margin-top: 20vw;*/ }
   header .display-nav li a {
     float: left;
-    width: 100%;
+    width: 99.8%;
     text-align: center;
     color: white;
     font-size: 10vw;
     border: 1px solid white;
-    padding: 5vw 0; }
+    padding: 5vw 0;
+    font-family: Helvetica, sans-serif; }
+  header .display-nav li a:hover, header .display-nav li a:active {
+    color: #1E87E8; }
   header li {
     list-style: none; }
   header li a {
