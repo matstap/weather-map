@@ -64,11 +64,14 @@ header {
     font-family: Helvetica, sans-serif;
     margin-top: 6vw;
     color: white; }
+  header .icon-menu {
+    position: absolute;
+    top: 25%;
+    right: 2%; }
   header nav {
     float: right;
-    margin-top: 5vw;
-    margin-right: 3vw;
-    position: relative; }
+    position: relative;
+    width: 100%; }
   header div {
     font-size: 10vw; }
   header ul {
@@ -82,8 +85,6 @@ header {
     display: none;
     width: 100%; }
   header .display-nav {
-    position: fixed;
-    top: 20vw;
     z-index: 99;
     width: 100%;
     background: #444;
@@ -102,6 +103,10 @@ header {
   header li a {
     color: white;
     text-decoration: none; }
+
+.hidden {
+  height: 100vw;
+  overflow: hidden; }
 
 #map {
   height: 75vw;

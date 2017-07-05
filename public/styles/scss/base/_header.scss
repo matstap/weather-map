@@ -7,7 +7,6 @@ $fourth-color: black;
 header{
   position: relative;
   max-width: 100%;
-
   width: 100%;
   background: $primary-color;
   height: 20vw;
@@ -29,11 +28,16 @@ header{
     color: $tertiary-color;
   }
 
+  .icon-menu{
+    position: absolute;
+    top: 25%;
+    right: 2%;
+  }
+
   nav{
     float: right;
-    margin-top: 5vw;
-    margin-right: 3vw;
     position: relative;
+    width: 100%;
   }
 
   div {
@@ -51,13 +55,12 @@ header{
   }
 
   .menu {
-  display: none;
-  width: 100%;
+    display: none;
+    width: 100%;
   }
 
   .display-nav{
-    position: fixed;
-    top: 20vw;
+    // position: fixed;
     z-index: 99;
     width: 100%;
     background: $primary-color;
@@ -85,4 +88,9 @@ header{
     text-decoration: none;
   }
 
+}
+
+.hidden{
+  height: 100vw;
+  overflow: hidden;
 }
