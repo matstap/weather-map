@@ -23,7 +23,7 @@ $fourth-color: black;
     }
 
     h1 {
-      width: 140px;
+      width: 120px;
       font-size: 30px;
       margin-left: 0px;
       margin-top: 50px
@@ -33,20 +33,21 @@ $fourth-color: black;
       display: none;
     }
 
-    .main-nav {
+    nav {
       display: block;
       float: right;
       height: 50px;
-      margin-top: 0px;
+      margin-top: 0vw;
       margin-right: 0px;
       position: static;
     }
 
-    .menu{
+    ul {
       display: block;
+      position: static;
       height: 40px;
       margin-top: 0px;
-      margin-right: 0px;
+      margin-right: 30px;
       padding-left: 40px;
       position: static;
     }
@@ -58,7 +59,6 @@ $fourth-color: black;
       // position: absolute;
       font-size: 25px;
       margin-right: 0px;
-      width: 120px;
       outline: 1px dotted orange;
     }
 

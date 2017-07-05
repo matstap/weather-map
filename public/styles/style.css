@@ -86,8 +86,7 @@ header {
     height: 100vh;
     width: 100vw;
     background: #444;
-    color: #777; }
-  header .menu {
+    color: #777;
     display: none;
     width: 100%; }
   header .display-nav {
@@ -130,31 +129,31 @@ header {
       margin-right: 20px;
       margin-left: 20px; }
     header h1 {
-      width: 140px;
+      width: 120px;
       font-size: 30px;
       margin-left: 0px;
       margin-top: 50px; }
     header .icon-menu {
       display: none; }
-    header .main-nav {
+    header nav {
       display: block;
       float: right;
       height: 50px;
-      margin-top: 0px;
+      margin-top: 0vw;
       margin-right: 0px;
       position: static; }
-    header .menu {
+    header ul {
       display: block;
+      position: static;
       height: 40px;
       margin-top: 0px;
-      margin-right: 0px;
+      margin-right: 30px;
       padding-left: 40px;
       position: static; }
     header li {
       display: inline-block;
       font-size: 25px;
       margin-right: 0px;
-      width: 120px;
       outline: 1px dotted orange; } }
 
 /*# sourceMappingURL=style.css.map */
