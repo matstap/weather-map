@@ -27,7 +27,7 @@ h2 {
     color: white; }
   .entries input:focus {
     color: #fff100; }
-  .entries #get_weather {
+  .entries .get_weather {
     font-size: 4vw;
     border: none;
     padding: 2vw 3vh;
@@ -155,5 +155,28 @@ header {
       font-size: 25px;
       margin-right: 0px;
       outline: 1px dotted orange; } }
+@media only screen and (min-width: 640px) {
+  main {
+    max-width: 960px;
+    margin: 0 auto; } }
+@media only screen and (min-width: 640px) {
+  .entries {
+    margin: 30px; }
+    .entries h2 {
+      font-size: 32px;
+      margin-bottom: 20px; }
+    .entries input {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 40%;
+      height: 10px;
+      padding: 15px; }
+    .entries input:nth-child(1) {
+      margin-right: 20px; }
+    .entries .get_weather {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin-top: 0px; } }
 
 /*# sourceMappingURL=style.css.map */
