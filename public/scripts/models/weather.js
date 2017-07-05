@@ -1,7 +1,7 @@
 'use strict';
 
-var lat = 47.57;
-var lon = -122.65;
+// var lat = 47.57;
+// var lon = -122.65;
 var api_key = 'd03ed117124fd765f370b5417fedbb03'
 
 function Weather(obj) {
