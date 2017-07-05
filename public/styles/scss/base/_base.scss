@@ -6,10 +6,22 @@ $fourth-color: black;
 $fifth-color: #1E87E8;
 
 *{
-  font: $font-stack;
+  font-family: $font-stack;
 }
 
 h2{
   font-size: 7vw;
   margin-bottom: 1vw;
 }
+
+footer {
+  height: 200px;
+  background-color: $primary-color;
+  margin-top: 30px;
+}
+
+footer p  {
+  margin-left: 5vw;
+  padding-top: 4vw;
+  color: $tertiary-color;
+  }
