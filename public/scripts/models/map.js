@@ -1,5 +1,3 @@
-'use strict';
-
 var map;
 var markers = [];
 
@@ -63,15 +61,13 @@ function addMarkers(points) {
       icon: `http://openweathermap.org/img/w/${points[i].icon}.png`,
       title: `| ${points[i].name} | ${points[i].description} |`
     });
+    marker.content = `<h3>${points[i].name}</h3>`;
     markers.push(marker);
 
-  //   var contentString = `<h3>${points[i].name}</h3>`
-  //   var infowindow = new google.maps.InfoWindow({
-  //     content: contentString
-  //   });
-  //   console.log(points[i].name);
-  //   marker.addListener('click', function() {
-  //     infowindow.open(map, marker);
-  //   });
+    var infoWindow = new google.maps.InfoWindow();
+    google.maps.event.addListener(marker, 'click', function () {
+      infoWindow.setContent(this.content);
+      infoWindow.open(this.getMap(), this);
+    });
   }
 }
