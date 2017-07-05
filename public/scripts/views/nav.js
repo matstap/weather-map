@@ -5,24 +5,16 @@ var app = app || {};
 (function(module) {
   var pageView = {};
 
-pageView.navigation = () => {
-  $('#icon-menu').on('click', () => {
-    $(this).toggleClass('active');
-  });
-}
+  pageView.about = () => {
+    $('.tab-content').hide();
+    $('.about').show();
+  }
 
-pageView.loadMap = () => {
-  //Callback function for google maps ajax Call
-}
-
-pageView.loadWeather = () => {
-  //Callback function for weather api ajax call
-}
-
-pageView.about = () => {
-  $('.tab-content').hide();
-  $('.about').show();
-}
-
+  pageView.home = () => {
+    $('.tab-content').hide();
+    $('.entries').show();
+    $('.map').show();
+  }
+  
   module.pageView = pageView;
 }(app));

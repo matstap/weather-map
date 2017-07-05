@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/icomoon/style.css">
-    <script id="weather_template" type="text/x-handlebars-template">
+    <!-- <script id="weather_template" type="text/x-handlebars-template">
       <ul class="weather-info">
         <li>Temperature {{temp}}</li>
         <li>Low{{min-temp}}</li>
@@ -18,7 +18,7 @@
         <li>rbain {{rain}}</li>
         <li>{{snow}}</li>
       </ul>
-    </script>
+    </script> -->
   </head>
   <body>
     <header>
@@ -34,6 +34,7 @@
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
+
       </nav>
     </header>
 
@@ -83,9 +84,8 @@
     <script src="vendor/scripts/page.js"></script>
     <script src="scripts/views/nav.js"></script>
     <script src="scripts/views/nav-display.js"></script>
+    <script src="scripts/models/weather.js"></script>
+    <script src="scripts/models/map.js"></script>
     <script src="scripts/controllers/routes.js"></script>
-    <script src="scripts/controllers/weather.js"></script>
-    <script src="scripts/controllers/map.js"></script>
-
   </body>
 </html>
