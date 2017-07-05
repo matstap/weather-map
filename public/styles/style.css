@@ -107,4 +107,38 @@ header {
   height: 75vw;
   width: 100%; }
 
+@media only screen and (min-width: 820px) {
+  header {
+    height: 130px; }
+    header img {
+      display: none;
+      width: 130px;
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 20px; }
+    header h1 {
+      font-size: 57px;
+      margin-left: 30px;
+      margin-top: 50px; }
+    header .main-nav {
+      float: right;
+      width: 400px;
+      height: 40px;
+      margin-top: 50px;
+      margin-right: 0px; }
+    header .icon-menu {
+      display: none; }
+    header .menu {
+      display: inline-block;
+      height: 40px;
+      width: 400px;
+      text-align: right;
+      margin-right: 30px;
+      margin-top: 25px; }
+    header li {
+      display: inline-block;
+      margin-right: 20px; }
+    header li a {
+      font-size: 30px; } }
+
 /*# sourceMappingURL=style.css.map */
