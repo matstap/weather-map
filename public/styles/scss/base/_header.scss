@@ -31,7 +31,7 @@ header{
     color: $tertiary-color;
   }
 
-  nav{
+  .main-nav{
     float: right;
     margin-top: 5vw;
     margin-right: 3vw;
@@ -42,7 +42,7 @@ header{
     font-size: 10vw;
   }
 
-  ul {
+  .menu {
     position: absolute;
     left: 0;
     height: 100vh;
@@ -56,11 +56,11 @@ header{
   .display-nav{
     position: fixed;
     top: 20vw;
+    left: 0;
     z-index: 99;
     width: 100%;
     background: $primary-color;
     height: 100vh;
-    /*margin-top: 20vw;*/
   }
 
 

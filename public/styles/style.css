@@ -73,14 +73,14 @@ header {
     font-family: Helvetica, sans-serif;
     margin-top: 5vw;
     color: white; }
-  header nav {
+  header .main-nav {
     float: right;
     margin-top: 5vw;
     margin-right: 3vw;
     position: relative; }
   header div {
     font-size: 10vw; }
-  header ul {
+  header .menu {
     position: absolute;
     left: 0;
     height: 100vh;
@@ -92,11 +92,11 @@ header {
   header .display-nav {
     position: fixed;
     top: 20vw;
+    left: 0;
     z-index: 99;
     width: 100%;
     background: #444;
-    height: 100vh;
-    /*margin-top: 20vw;*/ }
+    height: 100vh; }
   header .display-nav li a {
     float: left;
     width: 100%;
