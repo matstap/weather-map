@@ -73,11 +73,11 @@ header{
 
   .display-nav li a {
     float: left;
-    width: 100%;
+    width: 99.7%;
     text-align: center;
     color: $tertiary-color;
     font-size: 10vw;
-    border: 1px solid white;
+    border: 1px solid $tertiary-color;
     padding: 5vw 0;
   }
 
