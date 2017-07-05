@@ -42,9 +42,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
       directionsDisplay.setDirections(response);
       // console.log(response.routes[0].overview_path);
     } else {
-      
+
     }
     locations = directionsDisplay.getDirections().routes[0].overview_path.filter((_, ind) => ind % 25 === 0);
+    getWeather(locations, addMarkers);
   });
 }
 
