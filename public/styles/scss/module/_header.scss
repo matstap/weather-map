@@ -4,12 +4,11 @@ $secondary-color: #777;
 $tertiary-color: white;
 $fourth-color: black;
 
-@media only screen and (min-width: 820px) {
+@media only screen and (min-width: 640px) {
   header {
     height: 130px;
 
     img {
-      display: none;
       width: 130px;
       margin-top: 20px;
       margin-right: 20px;
@@ -17,7 +16,7 @@ $fourth-color: black;
     }
 
     h1 {
-      font-size: 57px;
+      font-size: 55px;
       margin-left: 30px;
       margin-top: 50px
     }
@@ -35,7 +34,7 @@ $fourth-color: black;
     }
 
     .menu {
-      display: inline-block;
+      display: block;
       height: 40px;
       width: 400px;
       text-align: right;
