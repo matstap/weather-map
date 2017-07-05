@@ -33,16 +33,17 @@ $fourth-color: black;
       display: none;
     }
 
-    nav {
+    .main-nav {
       display: block;
       float: right;
       height: 50px;
+      width: 350px;
       margin-top: 0vw;
       margin-right: 0px;
       position: static;
     }
 
-    ul {
+    .menu {
       display: block;
       position: static;
       height: 40px;

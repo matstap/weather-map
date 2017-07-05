@@ -144,14 +144,15 @@ header {
       margin-top: 50px; }
     header .icon-menu {
       display: none; }
-    header nav {
+    header .main-nav {
       display: block;
       float: right;
       height: 50px;
+      width: 350px;
       margin-top: 0vw;
       margin-right: 0px;
       position: static; }
-    header ul {
+    header .menu {
       display: block;
       position: static;
       height: 40px;
