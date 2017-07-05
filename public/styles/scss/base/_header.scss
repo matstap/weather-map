@@ -15,26 +15,23 @@ header{
 
   img{
     float: left;
-    width: 20vw;
-    margin-right: 3vw;
+    width: 18vw;
+    // margin-top: 5vw;
+    margin-right: 0vw;
     margin-left: 3vw;
+    margin-top: 0vw;
   }
 
   h1{
     float: left;
-    font-size: 8vw;
+    width: 20vw;
+    font-size: 5vw;
     font-family: $font-stack;
-    margin-top: 6vw;
+    margin-top: 5vw;
     color: $tertiary-color;
   }
 
-  .icon-menu{
-    position: absolute;
-    top: 25%;
-    right: 2%;
-  }
-
-  nav{
+  .main-nav{
     float: right;
     margin-top: 5vw;
     margin-right: 3vw;
@@ -46,17 +43,13 @@ header{
     font-size: 10vw;
   }
 
-  ul {
+  .menu {
     position: absolute;
     left: 0;
     height: 100vh;
     width: 100vw;
     background: $primary-color;
     color: $secondary-color;
-
-  }
-
-  .menu {
     display: none;
     width: 100%;
   }
@@ -64,11 +57,11 @@ header{
   .display-nav{
     position: fixed;
     top: 20vw;
+    left: 0;
     z-index: 99;
     width: 100%;
     background: $primary-color;
     height: 100vh;
-    /*margin-top: 20vw;*/
   }
 
 

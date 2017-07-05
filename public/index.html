@@ -22,15 +22,19 @@
   </head>
   <body>
     <header>
-      <img src="img/weather-icon.png">
-      <h1>Weather or Not</h1>
-      <div class="icon-menu"></div>
-      <nav class="main-nav">
-        <ul class="menu">
-          <li><a href="/home">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/trouble">TroubleShooting</a></li>
-        </ul>
+      <div class="max-width">
+        <img src="img/weather-icon.png">
+        <h1>Weather or Not</h1>
+        <div class="clearfix"> </div>
+        <nav class="main-nav">
+          <div class="icon-menu"></div>
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+          </ul>
+        </div>
+
       </nav>
     </header>
 
@@ -45,12 +49,12 @@
           <label>
             <input type="text" id="end" placeholder="Ending Point" required>
           </label>
-          <button type="button" id="get_weather" name="new-route">Get Weather</button>
+          <button type="button" id="get_weather" class="get_weather" name="new-route">Get Weather</button>
         </form>
       </section>
 
-      <section class="tab-content map">
-        <div id="map"></div>
+      <section class="tab-content">
+        <div id="map" class="map"></div>
       </section>
 
       <section class="tab-content about">
