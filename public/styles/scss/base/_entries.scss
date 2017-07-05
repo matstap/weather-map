@@ -3,17 +3,18 @@ $primary-color: #444;
 $secondary-color: #777;
 $tertiary-color: white;
 $fourth-color: #fff100;
+$fifth-color: #1E87E8;
 
 .entries{
   margin: 3vw;
 
-  h2{
+  h2 {
     font-size: 5vw;
     margin-bottom: 2vw;
     font-family: $font-stack;
   }
 
-  input{
+  input {
     display: block;
     margin-bottom: 2vw;
     font-size: 4vw;
@@ -21,8 +22,8 @@ $fourth-color: #fff100;
     height: 5vw;
     padding: 2vw;
     outline: none;
-    background: $primary-color;
-    border: none;
+    background: $secondary-color;
+    border: 1px solid $tertiary-color;
     color: $tertiary-color;
   }
 
@@ -32,13 +33,19 @@ $fourth-color: #fff100;
 
   input:focus{
     color: $fourth-color;
+    box-shadow: 0 0 5px $fifth-color;
+    border: 1px solid $fifth-color;
+  }
+
+  input:not(:focus){
+    color:$tertiary-color;
   }
 
   .get_weather {
     font-size: 4vw;
     border: none;
     padding: 2vw 3vh;
-    background: #000;
+    background: $primary-color;
     color: #fff;
     border-radius: 3px;
     margin-top: 1vw;
