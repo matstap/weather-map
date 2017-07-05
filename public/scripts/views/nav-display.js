@@ -5,6 +5,7 @@ $('.icon-menu').click(function(){
 });
 
 $('.main-nav ul li').click(function(){
+  $('body').removeClass('hidden');
   $('.main-nav ul').addClass('menu');
   $('.main-nav ul').removeClass('display-nav');
 });
