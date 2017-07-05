@@ -42,9 +42,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
       directionsDisplay.setDirections(response);
       // console.log(response.routes[0].overview_path);
     } else {
-      
+
     }
     locations = directionsDisplay.getDirections().routes[0].overview_path.filter((_, ind) => ind % 25 === 0);
+    getWeather(locations, addMarkers);
   });
 }
 
@@ -64,7 +65,7 @@ function addMarkers(points) {
       icon: `http://openweathermap.org/img/w/${points[i].icon}.png`,
       title: `| ${points[i].name} | ${points[i].description} |`
     });
-    marker.content = `<h3>${points[i].name}</h3>`;
+    marker.content = `<h3>${points[i].name}</h3><p>${points[i].description}</p><p>Temp: ${points[i].temp}&deg; F</p><p>Humidity: ${points[i].humidity}%</p>`;
     markers.push(marker);
 
     var infoWindow = new google.maps.InfoWindow();
