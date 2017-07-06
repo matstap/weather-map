@@ -62,7 +62,7 @@ function addMarkers(points) {
     var marker = new google.maps.Marker({
       position: markerLoc,
       map: map,
-      icon: `https://openweathermap.org/img/w/${points[i].icon}.png`,
+      icon: `http://openweathermap.org/img/w/${points[i].icon}.png`,
       title: `| ${points[i].name} | ${points[i].description} |`
     });
     marker.content = `<h3>${points[i].name}</h3><p>${points[i].description}</p><p>Temp: ${points[i].temp}&deg; F</p><p>Humidity: ${points[i].humidity}%</p>`;
