@@ -5,6 +5,10 @@ $tertiary-color: white;
 $fourth-color: black;
 $fifth-color: #1E87E8;
 
+.clear-fix{
+  clear:both;
+}
+
 h2{
   font-size: 5vw;
   margin-bottom: 3vw;
