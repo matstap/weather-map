@@ -22,11 +22,11 @@ function initMap() {
   }
 
   directionsDisplay.setMap(map);
-
   var onChangeHandler = function() {
     for (var i = 0; i < markers.length; i++) {
       markers[i].setMap(null);
     }
+
     markers = [];
     calculateAndDisplayRoute(directionsService, directionsDisplay);
   };
@@ -42,9 +42,10 @@ function calculateAndDisplayRoute(directionsService, directionsDisplay) {
   }, function(response, status) {
     if (status === 'OK') {
       directionsDisplay.setDirections(response);
-    } else {
-
+    }else{
+      alert('You are invalid');
     }
+    
     locations = directionsDisplay.getDirections().routes[0].overview_path.filter((_, ind) => ind % 25 === 0);
     getWeather(locations, addMarkers);
   });
@@ -55,7 +56,7 @@ function addMarkers(points) {
   var marker = new google.maps.Marker({
     position: markerLoc,
     map: map,
-    icon: `http://openweathermap.org/img/w/${points.icon}.png`,
+    icon: points.icon,
     title: `| ${points.name} | ${points.description} |`
   });
   marker.content = `<h3>${points.name}</h3><p>${points.description}</p><p>Temp: ${points.temp}&deg; F</p><p>Humidity: ${points.humidity}%</p>`;
