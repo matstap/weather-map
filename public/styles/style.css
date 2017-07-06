@@ -241,6 +241,17 @@ header {
       padding: 10px 20px;
       margin-top: 0px; } }
 @media only screen and (min-width: 640px) {
+  .contact-us h3 {
+    margin: 5vw 2%; }
+  .contact-us input {
+    max-width: 50vw;
+    font-size: 20px; }
+  .contact-us textarea {
+    font-size: 20px; }
+  .contact-us button {
+    font-size: 20px;
+    padding: 10px 20px; } }
+@media only screen and (min-width: 640px) {
   .map {
     height: 500px;
     width: 94%;
