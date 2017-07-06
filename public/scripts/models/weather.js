@@ -21,7 +21,7 @@ function getWeather(arr, callback) {
   weatherObj = [];
   arr.map((item, ind) => {
     var temp;
-    $.get('/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
+    $.get('/weatherapi/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
       temp = new Weather(data);
       console.log(data);
       weatherObj.push(temp);
