@@ -1,15 +1,15 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Telex', sans-serif;
 $primary-color: #444;
 $secondary-color: #777;
 $tertiary-color: white;
 $fourth-color: black;
 $fifth-color: #1E87E8;
 
-*{
+* {
   font-family: $font-stack;
 }
 
-h2{
+h2 {
   font-size: 7vw;
   margin-bottom: 1vw;
 }
@@ -20,8 +20,8 @@ footer {
   margin-top: 30px;
 }
 
-footer p  {
+footer p {
   margin-left: 5vw;
   padding-top: 4vw;
   color: $tertiary-color;
-  }
+}

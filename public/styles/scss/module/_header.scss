@@ -9,7 +9,7 @@ $fourth-color: black;
     height: 130px;
     position: static;
 
-    .max-width{
+    .max-width {
       max-width: 960px;
       margin: 0 auto;
       position: relative;
@@ -24,12 +24,12 @@ $fourth-color: black;
 
     h1 {
       width: 120px;
-      font-size: 30px;
+      font-size: 36px;
       margin-left: 0px;
-      margin-top: 37px;
+      margin-top: 34px;
     }
 
-    .icon-menu{
+    .icon-menu {
       display: none;
     }
 
@@ -48,23 +48,15 @@ $fourth-color: black;
       display: block;
       position: static;
       height: auto;
-      margin-top: 60px;
-
+      margin-top: 72px;
       position: static;
       text-align: right;
     }
 
-    //!
-
     li {
       display: inline-block;
-      // position: absolute;
       font-size: 25px;
       margin-right: 10px;
     }
-
   }
-
-
-
 }

@@ -1,28 +1,26 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Telex', sans-serif;
 $primary-color: #444;
 $secondary-color: #777;
 $tertiary-color: white;
 $fourth-color: black;
 
-header{
+header {
   position: relative;
   max-width: 100%;
-
   width: 100%;
   background: $primary-color;
   height: 20vw;
   color: $secondary-color;
 
-  img{
+  img {
     float: left;
     width: 18vw;
-    // margin-top: 5vw;
     margin-right: 0vw;
     margin-left: 3vw;
     margin-top: 0vw;
   }
 
-  h1{
+  h1 {
     float: left;
     width: 20vw;
     font-size: 5vw;
@@ -38,7 +36,7 @@ header{
     font-size: 10vw;
   }
 
-  .main-nav{
+  .main-nav {
     float: right;
     margin-top: 5vw;
     margin-right: 3vw;
@@ -58,7 +56,7 @@ header{
     width: 100%;
   }
 
-  .display-nav{
+  .display-nav {
     position: fixed;
     top: 20vw;
     left: 0;
@@ -67,7 +65,6 @@ header{
     background: $primary-color;
     height: 100vh;
   }
-
 
   .display-nav li a {
     float: left;
@@ -79,19 +76,20 @@ header{
     padding: 5vw 0;
   }
 
-  li{
+  li {
     list-style: none;
   }
 
-  li a{
+  li a {
     color: white;
     text-decoration: none;
     font-family: $font-stack;
+    padding-left: 12px;
+    cursor: pointer;
   }
-
 }
 
-.hidden{
+.hidden {
   height: 100vw;
   overflow: hidden;
 }

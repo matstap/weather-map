@@ -1,8 +1,8 @@
-$font-stack: Helvetica, sans-serif;
+$font-stack: 'Telex', sans-serif;
 
 .about {
   margin: 3vw;
-  h2{
+  h2 {
     font-size: 5vw;
     margin-bottom: 3vw;
     font-family: $font-stack;
@@ -20,7 +20,7 @@ $font-stack: Helvetica, sans-serif;
     margin-right: 2vw;
   }
 
-  h3{
+  h3 {
     font-size: 3.5vw;
     margin-bottom: 2vw;
     font-family: $font-stack;
@@ -28,11 +28,6 @@ $font-stack: Helvetica, sans-serif;
 
   p {
     font-size: 2.3vw;
-    // margin-bottom: 3vw;
     font-family: $font-stack;
   }
-
-  // p:after {
-  // clear: both;
-  // }
 }
