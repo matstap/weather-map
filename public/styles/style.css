@@ -55,10 +55,10 @@ footer p {
     cursor: pointer; }
 
 .about {
-  margin: 5vw; }
+  margin: 3vw; }
   .about h2 {
     font-size: 5vw;
-    margin-bottom: 5vw;
+    margin-bottom: 3vw;
     font-family: Helvetica, sans-serif; }
   .about .about-container {
     width: 100%;
@@ -70,11 +70,10 @@ footer p {
     margin-right: 2vw; }
   .about h3 {
     font-size: 3.5vw;
-    margin-bottom: 3vw;
+    margin-bottom: 2vw;
     font-family: Helvetica, sans-serif; }
   .about p {
-    font-size: 2.5vw;
-    margin-bottom: 3vw;
+    font-size: 2.3vw;
     font-family: Helvetica, sans-serif; }
 
 header {
