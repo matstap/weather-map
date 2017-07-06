@@ -1,7 +1,5 @@
 'use strict';
 
-// var lat = 47.57;
-// var lon = -122.65;
 var api_key = 'd03ed117124fd765f370b5417fedbb03'
 
 function Weather(obj) {
@@ -14,17 +12,11 @@ function Weather(obj) {
   this.lng = obj.coord.lon;
 }
 
-var weatherObj = [];
-
-
 function getWeather(arr, callback) {
-  weatherObj = [];
-  arr.map((item, ind) => {
-    var temp;
+  var weatherObj;
+  arr.map(item => {
     $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
-      temp = new Weather(data);
-      console.log(data);
-      weatherObj.push(temp);
+      weatherObj = new Weather(data);
       callback(weatherObj);
     });
   });
