@@ -1,23 +1,27 @@
 'use strict';
 
-var api_key = 'd03ed117124fd765f370b5417fedbb03'
-
 function Weather(obj) {
-  this.description = obj.weather[0].description;
-  this.name = obj.name;
-  this.temp = obj.main.temp;
-  this.humidity = obj.main.humidity;
-  this.icon = obj.weather[0].icon;
-  this.lat = obj.coord.lat;
-  this.lng = obj.coord.lon;
+  this.description = obj.currently;
+  this.name = obj.city;
+  this.temp = obj.temp;
+  this.humidity = obj.humidity;
+  this.icon = obj.thumbnail;
 }
 
 function getWeather(arr, callback) {
   var weatherObj;
   arr.map(item => {
-    $.getJSON('/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
-      weatherObj = new Weather(data);
-      callback(weatherObj);
+    let currLocation = `${item.lat()},${item.lng()}`;
+    $.simpleWeather({
+      location: currLocation,
+      weoid: '',
+      unit: 'f',
+      success: function (data) {
+        weatherObj = new Weather(data);
+        weatherObj.lat = item.lat();
+        weatherObj.lng = item.lng();
+        callback(weatherObj);
+      }
     });
   });
 }
