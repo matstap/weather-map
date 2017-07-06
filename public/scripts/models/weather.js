@@ -15,7 +15,7 @@ function Weather(obj) {
 function getWeather(arr, callback) {
   var weatherObj;
   arr.map(item => {
-    $.getJSON('http://api.openweathermap.org/data/2.5/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
+    $.getJSON('/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
       weatherObj = new Weather(data);
       callback(weatherObj);
     });
