@@ -1,12 +1,5 @@
-$font-stack: Helvetica, sans-serif;
-
 .about {
   margin: 3vw;
-  h2{
-    font-size: 5vw;
-    margin-bottom: 3vw;
-    font-family: $font-stack;
-  }
 
   .about-container {
     width: 100%;
@@ -28,11 +21,7 @@ $font-stack: Helvetica, sans-serif;
 
   p {
     font-size: 2.3vw;
-    // margin-bottom: 3vw;
     font-family: $font-stack;
   }
 
-  // p:after {
-  // clear: both;
-  // }
 }

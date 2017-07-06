@@ -1,0 +1,24 @@
+@media only screen and (min-width: 640px){
+  .about{
+    margin: 30px;
+
+    h2{
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    img {
+      height: 250px;
+      width: 250px;
+      margin-right: 15px;
+      margin-bottom: 30px;
+      border: 4px solid black;
+    }
+
+    p{
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+  }
+}
