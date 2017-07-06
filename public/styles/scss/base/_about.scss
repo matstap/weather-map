@@ -8,6 +8,11 @@ $font-stack: Helvetica, sans-serif;
     font-family: $font-stack;
   }
 
+  .about-container {
+    width: 100%;
+    height: 32vw;
+  }
+
   img {
     float: left;
     height: 30vw;
@@ -16,13 +21,13 @@ $font-stack: Helvetica, sans-serif;
   }
 
   h3{
-    font-size: 4vw;
+    font-size: 3.5vw;
     margin-bottom: 3vw;
     font-family: $font-stack;
   }
 
   p {
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin-bottom: 3vw;
     font-family: $font-stack;
   }
