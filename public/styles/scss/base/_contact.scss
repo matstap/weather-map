@@ -1,11 +1,11 @@
-.contact-us{
-  h3{
+.contact-us {
+  h3 {
     font-size: 5vw;
     margin-bottom: 2vw;
     margin-left: 2%;
   }
 
-  input, textarea{
+  input, textarea {
     font-size: 4vw;
     color: $tertiary-color;
     border: 1px solid $tertiary-color;
@@ -14,7 +14,7 @@
     margin:0 2% 2vw 2%;
   }
 
-  input:focus, textarea:focus{
+  input:focus, textarea:focus {
     color: $fourth-color;
     box-shadow: 0 0 5px $fifth-color;
     border: 1px solid $fifth-color;
@@ -24,14 +24,14 @@
     color: $tertiary-color;
   }
 
-  textarea{
+  textarea {
     height: 20vw;
     overflow: auto;
     resize: none;
     width: 95.25%;
   }
 
-  button{
+  button {
     margin-left: 2%;
     font-size: 4vw;
     border: none;
