@@ -1,16 +1,6 @@
-$font-stack: 'Telex', sans-serif;
-$primary-color: #444;
-$secondary-color: #777;
-$tertiary-color: white;
-$fourth-color: black;
 
 header {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  background: $primary-color;
   height: 20vw;
-  color: $secondary-color;
 
   img {
     float: left;
@@ -31,7 +21,7 @@ header {
 
   .icon-menu {
     position:absolute;
-    top: 25%;
+    top: 4vw;
     right:2%;
     font-size: 10vw;
   }

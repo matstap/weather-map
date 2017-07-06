@@ -4,13 +4,15 @@
 }
 
 @import 'scss/base/base.scss';
-@import 'scss/base/entries.scss';
-@import 'scss/base/about.scss';
-@import 'scss/base/contact.scss';
-@import 'scss/base/header.scss';
-@import 'scss/base/map.scss';
-@import 'scss/module/header.scss';
-@import 'scss/module/main.scss';
-@import 'scss/module/entries.scss';
-@import 'scss/module/contact.scss';
-@import 'scss/module/map.scss';
+@import 'scss/base/main.scss';
+@import 'scss/layout/footer.scss';
+@import 'scss/layout/header-base.scss';
+@import 'scss/module/about.scss';
+@import 'scss/module/contact-mobile.scss';
+@import 'scss/module/contact-desktop.scss';
+@import 'scss/module/entries-mobile.scss';
+@import 'scss/module/entries-desktop.scss';
+@import 'scss/module/header-mobile.scss';
+@import 'scss/module/header-desktop.scss';
+@import 'scss/module/map-mobile.scss';
+@import 'scss/module/map-desktop.scss';

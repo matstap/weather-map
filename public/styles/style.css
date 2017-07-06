@@ -9,6 +9,10 @@ h2 {
   font-size: 7vw;
   margin-bottom: 1vw; }
 
+@media only screen and (min-width: 640px) {
+  main {
+    max-width: 960px;
+    margin: 0 auto; } }
 footer {
   height: 100px;
   background-color: #444;
@@ -19,40 +23,16 @@ footer p {
   padding-top: 4vw;
   color: white; }
 
-.entries {
-  margin: 3vw; }
-  .entries h2 {
-    font-size: 5vw;
-    margin-bottom: 2vw;
-    font-family: "Telex", sans-serif; }
-  .entries input {
-    display: block;
-    margin-bottom: 2vw;
-    font-size: 4vw;
-    width: 50vw;
-    height: 5vw;
-    padding: 2vw;
-    outline: none;
-    background: #777;
-    border: 1px solid white;
-    color: white; }
-  .entries input::-webkit-input-placeholder {
-    color: white; }
-  .entries input:focus {
-    color: #fff100;
-    box-shadow: 0 0 5px #1E87E8;
-    border: 1px solid #1E87E8; }
-  .entries input:not(:focus) {
-    color: white; }
-  .entries .get_weather {
-    font-size: 4vw;
-    border: none;
-    padding: 2vw 3vh;
-    background: #444;
-    color: #fff;
-    border-radius: 3px;
-    margin-top: 1vw;
-    cursor: pointer; }
+header {
+  width: 100%;
+  background: #444;
+  height: 20vw;
+  color: #777; }
+
+.max-width {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative; }
 
 .about {
   margin: 3vw; }
@@ -88,7 +68,7 @@ footer p {
   width: 96%;
   margin: 0 2% 2vw 2%; }
 .contact-us input:focus, .contact-us textarea:focus {
-  color: #fff100;
+  color: black;
   box-shadow: 0 0 5px #1E87E8;
   border: 1px solid #1E87E8; }
 .contact-us input::-webkit-input-placeholder, .contact-us textarea::-webkit-input-placeholder {
@@ -108,13 +88,73 @@ footer p {
   border-radius: 3px;
   cursor: pointer; }
 
+@media only screen and (min-width: 640px) {
+  .contact-us h3 {
+    margin: 5vw 2%; }
+  .contact-us input {
+    max-width: 50vw;
+    font-size: 20px; }
+  .contact-us textarea {
+    font-size: 20px; }
+  .contact-us button {
+    font-size: 20px;
+    padding: 10px 20px; } }
+.entries {
+  margin: 3vw; }
+  .entries h2 {
+    font-size: 5vw;
+    margin-bottom: 2vw;
+    font-family: "Telex", sans-serif; }
+  .entries input {
+    display: block;
+    margin-bottom: 2vw;
+    font-size: 4vw;
+    width: 50vw;
+    height: 5vw;
+    padding: 2vw;
+    outline: none;
+    background: #777;
+    border: 1px solid white;
+    color: white; }
+  .entries input::-webkit-input-placeholder {
+    color: white; }
+  .entries input:focus {
+    color: black;
+    box-shadow: 0 0 5px #1E87E8;
+    border: 1px solid #1E87E8; }
+  .entries input:not(:focus) {
+    color: white; }
+  .entries .get_weather {
+    font-size: 4vw;
+    border: none;
+    padding: 2vw 3vh;
+    background: #444;
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 1vw;
+    cursor: pointer; }
+
+@media only screen and (min-width: 640px) {
+  .entries {
+    margin: 2vw 0vw 3vw 6vw; }
+    .entries h2 {
+      font-size: 30px;
+      margin-bottom: 20px; }
+    .entries input {
+      display: inline-block;
+      margin-bottom: 20px;
+      font-size: 20px;
+      width: 40%;
+      height: 10px;
+      padding: 15px; }
+    .entries input:nth-child(1) {
+      margin-right: 20px; }
+    .entries .get_weather {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin-top: 0px; } }
 header {
-  position: relative;
-  max-width: 100%;
-  width: 100%;
-  background: #444;
-  height: 20vw;
-  color: #777; }
+  height: 20vw; }
   header img {
     float: left;
     width: 18vw;
@@ -130,7 +170,7 @@ header {
     color: white; }
   header .icon-menu {
     position: absolute;
-    top: 25%;
+    top: 4vw;
     right: 2%;
     font-size: 10vw; }
   header .main-nav {
@@ -177,18 +217,10 @@ header {
   height: 100vw;
   overflow: hidden; }
 
-.map {
-  height: 75vw;
-  width: 100%; }
-
 @media only screen and (min-width: 640px) {
   header {
     height: 130px;
     position: static; }
-    header .max-width {
-      max-width: 960px;
-      margin: 0 auto;
-      position: relative; }
     header img {
       width: 130px;
       margin-top: 0px;
@@ -221,40 +253,10 @@ header {
       display: inline-block;
       font-size: 25px;
       margin-right: 10px; } }
-@media only screen and (min-width: 640px) {
-  main {
-    max-width: 960px;
-    margin: 0 auto; } }
-@media only screen and (min-width: 640px) {
-  .entries {
-    margin: 2vw 0vw 3vw 6vw; }
-    .entries h2 {
-      font-size: 30px;
-      margin-bottom: 20px; }
-    .entries input {
-      display: inline-block;
-      margin-bottom: 20px;
-      font-size: 20px;
-      width: 40%;
-      height: 10px;
-      padding: 15px; }
-    .entries input:nth-child(1) {
-      margin-right: 20px; }
-    .entries .get_weather {
-      font-size: 20px;
-      padding: 10px 20px;
-      margin-top: 0px; } }
-@media only screen and (min-width: 640px) {
-  .contact-us h3 {
-    margin: 5vw 2%; }
-  .contact-us input {
-    max-width: 50vw;
-    font-size: 20px; }
-  .contact-us textarea {
-    font-size: 20px; }
-  .contact-us button {
-    font-size: 20px;
-    padding: 10px 20px; } }
+.map {
+  height: 75vw;
+  width: 100%; }
+
 @media only screen and (min-width: 640px) {
   .map {
     height: 500px;
