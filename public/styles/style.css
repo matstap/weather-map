@@ -68,7 +68,7 @@ header {
   width: 96%;
   margin: 0 2% 2vw 2%; }
 .contact-us input:focus, .contact-us textarea:focus {
-  color: black;
+  color: #fff100;
   box-shadow: 0 0 5px #1E87E8;
   border: 1px solid #1E87E8; }
 .contact-us input::-webkit-input-placeholder, .contact-us textarea::-webkit-input-placeholder {
@@ -119,7 +119,7 @@ header {
   .entries input::-webkit-input-placeholder {
     color: white; }
   .entries input:focus {
-    color: black;
+    color: #fff100;
     box-shadow: 0 0 5px #1E87E8;
     border: 1px solid #1E87E8; }
   .entries input:not(:focus) {
