@@ -1,0 +1,12 @@
+header{
+  width: 100%;
+  background: $primary-color;
+  height: 20vw;
+  color: $secondary-color;
+}
+
+.max-width {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+}

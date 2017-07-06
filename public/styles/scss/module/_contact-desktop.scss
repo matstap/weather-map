@@ -1,0 +1,21 @@
+@media only screen and (min-width: 640px) {
+  .contact-us {
+    h3 {
+      margin: 5vw 2%;
+    }
+
+    input {
+      max-width: 50vw;
+      font-size: 20px;
+    }
+
+    textarea {
+      font-size: 20px;
+    }
+
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+    }
+  }
+}

@@ -1,31 +1,27 @@
 'use strict';
 
-// var lat = 47.57;
-// var lon = -122.65;
-var api_key = 'd03ed117124fd765f370b5417fedbb03'
-
 function Weather(obj) {
-  this.description = obj.weather[0].description;
-  this.name = obj.name;
-  this.temp = obj.main.temp;
-  this.humidity = obj.main.humidity;
-  this.icon = obj.weather[0].icon;
-  this.lat = obj.coord.lat;
-  this.lng = obj.coord.lon;
+  this.description = obj.currently;
+  this.name = obj.city;
+  this.temp = obj.temp;
+  this.humidity = obj.humidity;
+  this.icon = obj.thumbnail;
 }
 
-var weatherObj = [];
-
-
 function getWeather(arr, callback) {
-  weatherObj = [];
-  arr.map((item, ind) => {
-    var temp;
-    $.get('/weatherapi/weather?lat=' + item.lat() + '&lon=' + item.lng() + '&appid=' + api_key + '&units=imperial', function(data) {
-      temp = new Weather(data);
-      console.log(data);
-      weatherObj.push(temp);
-      callback(weatherObj);
+  var weatherObj;
+  arr.map(item => {
+    let currLocation = `${item.lat()},${item.lng()}`;
+    $.simpleWeather({
+      location: currLocation,
+      weoid: '',
+      unit: 'f',
+      success: function (data) {
+        weatherObj = new Weather(data);
+        weatherObj.lat = item.lat();
+        weatherObj.lng = item.lng();
+        callback(weatherObj);
+      }
     });
   });
 }
