@@ -74,6 +74,38 @@ footer p {
     margin-bottom: 3vw;
     font-family: Helvetica, sans-serif; }
 
+.contact-us h3 {
+  font-size: 5vw;
+  margin-bottom: 2vw;
+  margin-left: 2%; }
+.contact-us input, .contact-us textarea {
+  font-size: 4vw;
+  color: white;
+  border: 1px solid white;
+  background: #777;
+  width: 96%;
+  margin: 0 2% 2vw 2%; }
+.contact-us input:focus, .contact-us textarea:focus {
+  color: #fff100;
+  box-shadow: 0 0 5px #1E87E8;
+  border: 1px solid #1E87E8; }
+.contact-us input::-webkit-input-placeholder, .contact-us textarea::-webkit-input-placeholder {
+  color: white; }
+.contact-us textarea {
+  height: 20vw;
+  overflow: auto;
+  resize: none;
+  width: 95.25%; }
+.contact-us button {
+  margin-left: 2%;
+  font-size: 4vw;
+  border: none;
+  padding: 2vw 3vh;
+  background: #444;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer; }
+
 header {
   position: relative;
   max-width: 100%;

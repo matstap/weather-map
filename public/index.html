@@ -6,19 +6,6 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/icomoon/style.css">
-    <!-- <script id="weather_template" type="text/x-handlebars-template">
-      <ul class="weather-info">
-        <li>Temperature {{temp}}</li>
-        <li>Low{{min-temp}}</li>
-        <li>High{{max-temp}}</li>
-        <li>{{description}}</li>
-        <li>Humidity{{humidity}}</li>
-        <li>Cloudiness {{clouds}}</li>
-        <li>Wind {{wind}}</li>
-        <li>rbain {{rain}}</li>
-        <li>{{snow}}</li>
-      </ul>
-    </script> -->
   </head>
   <body>
     <header>
@@ -33,7 +20,6 @@
             <li><a href="/contact">Contact Us</a></li>
           </ul>
         </div>
-
       </nav>
     </header>
 
@@ -82,7 +68,7 @@
             <input type="text" id="title" placeholder="Reason for Contact" required>
           </label>
           <label>
-            <input type="text" id="contact-body" placeholder="Your Website is Terrible" required>
+            <textarea type="text" id="contact-body" placeholder="Your Comments"></textarea>
           </label>
           <button type="button" id="submit-contact" class="submit-contact" name="submit-contact">Submit</button>
       </section>
