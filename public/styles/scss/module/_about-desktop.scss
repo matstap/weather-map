@@ -1,0 +1,29 @@
+@media only screen and (min-width: 640px){
+  .about {
+    margin: 30px;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    .about-container {
+      height: 250px;
+      margin-bottom: 30px;
+    }
+
+    img {
+      height: 250px;
+      width: 250px;
+      margin-right: 20px;
+    }
+
+    h3 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 23px;
+    }
+  }
+}
