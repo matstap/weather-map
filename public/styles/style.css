@@ -110,16 +110,18 @@ header {
     cursor: pointer; }
 
 @media only screen and (min-width: 640px) {
-  .contact-us h3 {
-    margin: 5vw 2%; }
-  .contact-us input {
-    max-width: 50vw;
-    font-size: 20px; }
-  .contact-us textarea {
-    font-size: 20px; }
-  .contact-us button {
-    font-size: 20px;
-    padding: 10px 20px; } }
+  .contact-us {
+    margin-bottom: 0px; }
+    .contact-us h3 {
+      margin: 5vw 2%; }
+    .contact-us input {
+      max-width: 50vw;
+      font-size: 20px; }
+    .contact-us textarea {
+      font-size: 20px; }
+    .contact-us button {
+      font-size: 20px;
+      padding: 10px 20px; } }
 .entries {
   margin: 3vw; }
   .entries h2 {
